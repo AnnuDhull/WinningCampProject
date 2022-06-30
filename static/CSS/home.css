@@ -1,0 +1,144 @@
+ .about {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+ }
+
+ /* .about h4{
+       color: grey;
+    } */
+
+ .hero {
+     /* background: #000; */
+     width: 100%;
+     /* min-height: 100vh; */
+     padding-left: 3%;
+     padding-right: 3%;
+     /* padding-top: 80px;s */
+     box-sizing: border-box;
+     text-align: center;
+     color: grey;
+ }
+
+ .row {
+     /* margin-top: 80px; */
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+ }
+
+ .col {
+     flex-basis: 26%;
+     box-sizing: border-box;
+     text-align: center;
+     position: relative;
+     min-width: 200px;
+     margin-bottom: 20px;
+     z-index: 2;
+ }
+
+ .col::before, .col::after {
+     content: "";
+     height: 0px;
+     width: 0px;
+     background: linear-gradient(135deg, #0d6efd, #0d6efd);
+     position: absolute;
+     z-index: -1;
+     animation: none;
+ }
+
+ @keyframes stroke {
+     0% {
+         height: 8px;
+         width: 0px;
+     }
+     50% {
+         height: 8px;
+         width: calc(100% + 8px);
+     }
+     100% {
+         height: calc(100% + 16px);
+         width: calc(100% + 1px);
+     }
+ }
+
+ .col::before {
+     left: 0%;
+     top: -8px;
+ }
+
+ .col::after {
+     right: 0%;
+     bottom: -8px;
+ }
+
+ .col:hover::before, .col:hover::after {
+     animation: stroke 0.4s linear;
+     animation-fill-mode: forwards;
+ }
+
+ .profile {
+     width: 100%;
+     height: 100%;
+     box-sizing: border-box;
+     padding: 12px;
+     background: rgb(184, 206, 255);
+ }
+
+ .profile img {
+     width: 100%;
+ }
+
+ .profile h2 {
+     margin: 25px 0px 10px;
+     font-weight: 500;
+ }
+
+ .profile p {
+     margin-bottom: 10px;
+     color: #0d6efd;
+ }
+
+ .img-responsive {
+     width: 80%;
+     height: 90%;
+ }
+
+ .services {
+     width: 50%;
+ }
+
+ .services h4 {
+     display: inline;
+ }
+
+ .services i {
+     font-size: 22px;
+     color: #0d6efd;
+ }
+
+ .ChoseUs {
+     height: 80vh;
+ }
+
+ .carddd {
+     width: 200px;
+     height: 270px;
+     background-color: rgb(184, 206, 255);
+     border-radius: 10px;
+     display: flex;
+     justify-content: center;
+     padding: 20px;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .carddd img {
+     width: 40%;
+     height: 40%;
+ }
+
+ .carddd p, .carddd h6 {
+     text-align: center;
+ }

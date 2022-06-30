@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../static/CSS/Style.css">
+    <title>SWASTHYA</title>
+</head>
+
+<body>
+   {{> navbar}}
+    <section id="form">
+        <div class="container-fluid ">
+            <br>
+            <br>
+            <h1>Book Your Online Appointment Now</h1>
+            <hr>
+            <div class="form-div d-flex justify-content-center align-items-center">
+                <div class="form">
+                    <hr>
+                    <h1><span class="text-primary">A</span>ppointment <span class="text-primary">B</span>ook</h1>
+                    <br>
+                    <form action="" class="d-flex justify-content align-items-center flex-column">
+                        <input type="text" name="" placeholder="Enter Your Name" required>
+                        <input type="datetime-local" name="" placeholder="Select Date and Time Of Appoinment" required>
+                        <select name="" id="" required>
+                            <option value="---Select Problem---">--------------------Select
+                                Speciality---------------------</option>
+                            <option value="Paediatrics">Paediatrics</option>
+                            <option value="Psychiatry">Psychiatry</option>
+                            <option value="Dermatology">Dermatology</option>
+                            <option value="Cold, Cough and Fever">Cold, Cough and Fever</option>
+                            <option value="Covid Special Consult">Covid Special Consult</option>
+                        </select>
+                        <br>
+                        <textarea name="" id="" cols="53" rows="4" placeholder="Describe About Your Problem"
+                            required></textarea>
+                        <hr>
+                        <button type="submit">Book</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{> footer}}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="../static/JS/index.js"></script>
+</body>
+
+</html>
